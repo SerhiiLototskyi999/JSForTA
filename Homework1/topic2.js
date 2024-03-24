@@ -14,7 +14,7 @@ let res3 = Boolean(x < y);
 console.log(res3); // true
 console.log(typeof res3); // "boolean"
 
-let res4 = x / 'a';
+let res4 = parseInt(Boolean(x) + String(y));
 console.log(res4); // NaN
 console.log(typeof res4); // "number"
 
@@ -52,12 +52,13 @@ myArray.push("Hello");
 myArray.push(true);
 myArray.push(null);
 
+alert(myArray.length);
 let userInput = prompt("Please, enter any value:");
 myArray.push(userInput);
 
-console.log("Fifth element of the array:", myArray[4]);
+alert(`Fifth element of the array: ${myArray[4]}`);
 myArray.shift();
-console.log("Array after removing the first element:", myArray);
+alert(`Array after removing the first element: ${myArray}`);
 
 //Task4
 let cities = ["Rome", "Lviv", "Warsaw"];
