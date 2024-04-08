@@ -9,13 +9,13 @@ document.querySelector("#test").innerText = "Last";
 $("#test").text("Last");
 
 //Task2
-var imgElement = document.querySelector('.image');
+let imgElement = document.querySelector('.image');
 
 imgElement.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6fLEJQbiweXf70PSJaM1D8TyQJNbCeJP5wQ&s';
 alert(imgElement.outerHTML);
 
 //Task3
-var paragraphs = document.querySelectorAll('#text p');
+let paragraphs = document.querySelectorAll('#text p');
 
 paragraphs.forEach(function(paragraph, index) {
     console.log("Selector text " + index + ": " + paragraph.textContent);
@@ -24,33 +24,33 @@ paragraphs.forEach(function(paragraph, index) {
 
 //Task 4
 //a
-var listItems = document.querySelectorAll('#list li');
+let listItems = document.querySelectorAll('#list li');
 
-var order = [0, listItems.length - 1, 1, listItems.length - 2, 2];
+let order = [0, listItems.length - 1, 1, listItems.length - 2, 2];
 
-var output = "";
+let output = "";
 order.forEach(function(index) {
     output += listItems[index].textContent + "\n";
 });
 alert(output);
 
 //b
-var listItems = document.querySelectorAll('#list li');
+let listItems2 = document.querySelectorAll('#list li');
 
-var output = "";
-output += listItems[0].textContent + "\n"; // Перший елемент
-output += listItems[listItems.length - 1].textContent + "\n"; // Останній елемент
-output += listItems[1].textContent + "\n"; // Другий елемент
-output += listItems[listItems.length - 2].textContent + "\n"; // Четвертий елемент
-output += listItems[2].textContent + "\n"; // Третій елемент
+let output1 = "";
+output1 += listItems2[0].textContent + "\n"; // Перший елемент
+output1 += listItems2[listItems.length - 1].textContent + "\n"; // Останній елемент
+output1 += listItems2[1].textContent + "\n"; // Другий елемент
+output1 += listItems2[listItems.length - 2].textContent + "\n"; // Четвертий елемент
+output1 += listItems2[2].textContent + "\n"; // Третій елемент
 
-alert(output);
+alert(output1);
 
 //Task5
-var header = document.querySelector('h1');
-var paragraphs = document.querySelectorAll('#myDiv p');
-var listItems = document.querySelectorAll('#myList li');
-var span = document.querySelector('span');
+let header = document.querySelector('h1');
+let graphs = document.querySelectorAll('#myDiv p');
+let list = document.getElementById('myList');
+let span = document.querySelector('span');
 
 // Застосування стилів до заголовку
 header.style.fontWeight = 'bold';
@@ -60,42 +60,41 @@ header.style.backgroundColor = '#7cfc00';
 header.style.display = 'inline-block';
 
 // Застосування стилів до абзаців
-paragraphs[0].style.fontWeight = 'bold';
-paragraphs[0].style.fontStyle = 'normal';
-paragraphs[0].style.color = 'black';
+graphs[0].style.fontWeight = 'bold';
+graphs[0].style.fontStyle = 'normal';
+graphs[0].style.color = 'black';
 
-paragraphs[1].style.fontStyle = 'normal';
-paragraphs[1].style.color = 'red';
+graphs[1].style.fontStyle = 'normal';
+graphs[1].style.color = 'red';
 
-paragraphs[2].style.textDecoration = 'underline';
+graphs[2].style.textDecoration = 'underline';
 
-paragraphs[3].style.fontStyle = 'italic';
+graphs[3].style.fontStyle = 'italic';
 
 // Застосування стилів до елементів списку
-listItems.forEach(function(item) {
-    item.style.display = 'inline-block';
-});
+list.style.display = 'flex';
+list.style.listStyleType = 'none'
 
 // Застосування стилів до span елементу
 span.style.display = 'none'; // Щоб зробити невидимим
 
 //Task6
-var message1 = prompt("Введіть перше повідомлення:");
-var message2 = prompt("Введіть друге повідомлення:");
+let message1 = prompt("Введіть перше повідомлення:");
+let message2 = prompt("Введіть друге повідомлення:");
 
 document.getElementById("input1").value = message1;
 document.getElementById("input2").value = message2;
 
-var temp = document.getElementById("input1").value;
+let temp = document.getElementById("input1").value;
 document.getElementById("input1").value = document.getElementById("input2").value;
 document.getElementById("input2").value = temp;
 
 //Task7
 // Створення основних елементів
-var body = document.createElement("body");
-var main = document.createElement("main");
-var div = document.createElement("div");
-var paragraph = document.createElement("p");
+let body = document.createElement("body");
+let main = document.createElement("main");
+let div = document.createElement("div");
+let paragraph = document.createElement("p");
 
 main.setAttribute("class", "mainClass check item");
 div.setAttribute("id", "myDiv");
