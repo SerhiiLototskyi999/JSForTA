@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Виведення імені за допомогою alert()</title>
+    <!-- <title>Виведення імені за допомогою alert()</title> -->
+    <!-- <title>Change CSS Example</title>
+    <title>Remove Selected Option</title> -->
+    <!-- <style>
+        /* Стилізація тексту */
+        #text {
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+    </style> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        #eventLog {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <!-- <script>
         let myName = "Serhii";
         alert("My name: " + myName);
     </script>  -->
-    <div id="test">First</div>
+    <!-- <div id="test">First</div>
     <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh7Tq_irABziwyvGBlud3tJUmVShZdpuCa_g&s">
 
     <h2>Article header</h2>      
@@ -46,7 +62,48 @@
     </h1>
 
     <input type="text" id="input1" value="Text1">
-    <input type="text" id="input2" value="Text2">
-    <script src="topic6.js"></script>
+    <input type="text" id="input2" value="Text2"> -->
+
+    <p id="text">I learning JavaScript events!</p>
+    <div>
+        <button onclick="changeCSS()">Change style!</button>
+    </div>
+
+    <button id="button1">Change to Blue</button>
+    <button id="button2">Change to Pink</button>
+    <button id="button3">Hold for Brown</button>
+    <a href="#" id="link">Hover over me!</a>
+
+    <br>
+    <select id="mySelect">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
+    </select>
+    <button onclick="removeSelectedOption()">Remove Selected Option</button>
+    <br>
+
+    <button id="myButton">Live button!</button>
+    <div id="eventLog"></div>
+ 
+    <h2>Розміри вікна</h2>
+    <p id="dimensions"></p>
+
+    <select id="country">
+        <option value="Ukraine">Ukraine</option>
+        <option value="USA">USA</option>
+        <option value="Australia">Australia</option>
+    </select>
+ 
+    <select id="cities"></select>
+ 
+    <div>
+        <p>Обрана країна: <span id="selected-country"></span></p>
+        <p>Обране місто: <span id="selected-city"></span></p>
+    </div>
+
+    <script src="topic7.js"></script>
 </body>
 </html>
