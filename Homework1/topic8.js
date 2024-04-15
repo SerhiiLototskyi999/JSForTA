@@ -18,16 +18,17 @@ let data = {
  
  //Task3
  function mul(...values) {
-    return values.reduce((acc, val) => {
-        if (typeof val === 'number') {
-            return acc * val;
-        }
-        return acc;
-    }, 1);
+   return values.reduce((acc, val) => {
+       if (typeof val === 'number') {
+           return acc === 0 ? val : acc * val;
+       }
+       return acc;
+   }, 0);
 }
 
 console.log(mul(1, "str", 2, 3, true)); // 6
 console.log(mul(null, "str", false, true)); // 0
+
 
 //Task4
 let server = {
