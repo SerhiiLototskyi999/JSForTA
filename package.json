@@ -1,0 +1,19 @@
+{
+  "name": "jsforta",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerhiiLototskyi999/JSForTA.git#main"
+  },
+  "author": "Serhii Lototskyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SerhiiLototskyi999/JSForTA/issues"
+  },
+  "homepage": "https://github.com/SerhiiLototskyi999/JSForTA/tree/main#readme"
+}
