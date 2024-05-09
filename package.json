@@ -4,7 +4,7 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/SerhiiLototskyi999/JSForTA/issues"
   },
-  "homepage": "https://github.com/SerhiiLototskyi999/JSForTA/tree/main#readme"
+  "homepage": "https://github.com/SerhiiLototskyi999/JSForTA/tree/main#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.20.0"
+  }
 }
